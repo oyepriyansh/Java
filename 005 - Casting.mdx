@@ -1,0 +1,61 @@
+# Casting 
+
+Casting in java allows to convert a variable to one type to another
+
+> [!NOTE]
+> casting doesn't work with `boolen` data type
+
+## Widening Casting
+
+this happens automatically when converting a small data type to a larger data type, like `byte` to `int`
+
+byte -> short -> char -> int -> long -> float -> double
+
+### Syntax example of widening casting
+```java
+public class Main {
+  public static void main(String args[]) {
+  byte a = 120;
+  int b = a;
+  System.out.println(b);
+}
+}
+```
+
+## Narrowing Casting
+this has to be done manually by the converting data type next to the value when converting a larger data type to small data type, like `double` to `float`
+
+double -> float -> long -> int -> char -> short -> byte
+
+### syntax example of narrow casting 
+```java
+public class Main {
+  public static void main(String args[]) {
+  double a = 9.11;
+  float c = (float) a;
+  System.out.println(c);
+  }
+}
+```
+
+---
+
+> [!CAUTION]
+> in some cases of casting you will loose some part of values
+> 
+> eg: assigning a variable with `float` data type with a value of 5.6 and later if we convert it into `int` and print the value, then it will give 5 as a output not 5.6, therefore .6 will be loose
+>
+> and converting a value bigger than the datatype limit will for example:
+> ```java
+> public class Main {
+>   public static void main(String args[]) {
+>   int a = 296;
+>   byte c = (byte) a;
+>   System.out.println(c);
+>   }
+> }
+> ```
+>
+> > here the output will be 40
+> as bytes only supports value from -128 to 127, so there is no way the output will be 296 as defind in the above code, the modulas of value with its range (ie: 296 % 256)
+> same for all narrow

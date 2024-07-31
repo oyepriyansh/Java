@@ -346,4 +346,110 @@ System.out.println(x <= y); //return true
 System.out.println(y <= z); //return false
 System.out.println(z <= x); // return true
 ```
+---
 
+
+
+## Logical Operators
+Used to combine multiple boolean operations.
+
+### AND 
+denoted with `&&`
+
+Returns true if both statements are true, otherwise false.
+<table>
+  <tr>
+    <th>Statement 1</th>
+    <th>Statement 2</th>
+    <th>Result (Statement 1 && Statement 2)</th>
+  </tr>
+  <tr>
+    <td>true</td>
+    <td>true</td>
+    <td>true</td>
+  </tr>
+  <tr>
+    <td>true</td>
+    <td>false</td>
+    <td>false</td>
+  </tr>
+  <tr>
+    <td>false</td>
+    <td>true</td>
+    <td>false</td>
+  </tr>
+  <tr>
+    <td>false</td>
+    <td>false</td>
+    <td>false</td>
+  </tr>
+</table>
+
+```java
+int a = 3;
+int b = 4;
+int x = 5;
+int y = 6;
+
+boolean s1 = a < b && x < y; // returns true 
+boolean s2 = a < b && x > y; // returns false
+boolean s3 = a > b && x < y; // returns false
+boolean s4 = a > b && x > y; // returns false
+```
+
+### OR
+denoted with `||`
+
+Returns true if at least one statement is true. If both statements are false, it returns false.
+
+
+<table>
+  <tr>
+    <th>Statement 1</th>
+    <th>Statement 2</th>
+    <th>Result (Statement 1 || Statement 2)</th>
+  </tr>
+  <tr>
+    <td>true</td>
+    <td>true</td>
+    <td>true</td>
+  </tr>
+  <tr>
+    <td>true</td>
+    <td>false</td>
+    <td>true</td>
+  </tr>
+  <tr>
+    <td>false</td>
+    <td>true</td>
+    <td>true</td>
+  </tr>
+  <tr>
+    <td>false</td>
+    <td>false</td>
+    <td>false</td>
+  </tr>
+</table>
+
+```java
+int a = 3;
+int b = 4;
+int x = 5;
+int y = 6;
+
+boolean s1 = a < b || x < y; // returns true
+boolean s2 = a < b || x > y; // returns true
+boolean s3 = a > b || x < y; // returns true
+boolean s4 = a > b || x > y; // returns false
+```
+
+### NOT 
+denoted with `!`
+
+Returns the opposite value 
+
+```java
+boolean x = !true;
+System.out.println(x);
+```
+> Output: **false**

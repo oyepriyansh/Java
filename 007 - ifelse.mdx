@@ -1,0 +1,67 @@
+# if
+
+used to execute the code block if a condition is true 
+
+example
+
+```java
+if (50 > 25) {
+  System.out.println(50 is greater than 25):
+ }
+```
+
+as the condition 50 > 25 is true so the code block `System.out.println(50 is greater than 25):` will be executed, if we change it to something false then the code block will not be execited
+
+```java
+if (25 = 50) {
+  // anything written here will not be exeuted as the condition is false
+}
+```
+
+# else
+code block inside `else` will be executed when the condition inside `if` is false
+
+```java
+if (false) {
+  System.out.println("Hi"); // this will not execute
+}
+else {
+  System.out.println("The condition is false); // this code block will execute
+}
+```
+
+# else if 
+
+this is used to specify a new condition if the first condition is `false`
+
+```java
+if (false) {
+  System.out.println("something"); // this will not executed 
+}
+else if (true) {
+  System.out.println("Condition 2nd is true");
+}
+```
+---
+
+### example
+
+```java
+public class Main {
+  public static void main(String[] args) {
+    if (1 > 2) {
+      System.out.println("1 is greater than 2");
+    }
+    else if (3 > 2) {
+      System.out.println("3 is greater than 2");
+    }
+    else {
+      System.out.println("2 is greatest of all time");
+    }
+  }
+}
+```
+> Output: **3 is greater than 2**
+>
+> as the 2nd condition `3 > 2` is true
+> 

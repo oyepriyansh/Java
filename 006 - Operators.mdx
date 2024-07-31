@@ -1,0 +1,349 @@
+# Operators
+operators are used to perform operations between variables and values
+
+## Arithmetic Operators
+
+used to perform mathematical operations on variable and values
+
+### Addition
+  ```java
+  int x = 1 + 1;
+  ```
+
+  - example
+    
+    ```java
+    public class Main {
+     public static void main(String[] args) {
+
+      int x = 23;
+  
+      int y = 6;
+  
+      int result = x + y;
+  
+      System.out.println(result);
+      }
+    }
+    ```
+    > Output: **29**
+  
+### Substraction
+  ```java
+  int y = 9 - 6;
+  ```
+
+  - example
+
+    ```java
+    public class Main {
+      public static void main(String[] args) {
+    
+        int x = 12;
+
+        int y = 3;
+
+        int result = x - y;
+
+        System.out.println(result);
+      }
+    }
+
+    ```
+    > Output: **9**
+
+### Multiplication
+  ```java
+  int z = 2 - 3;
+  ```
+
+  - example
+
+    ```java
+    public class Main {
+     public static void main(String[] args) {
+    
+       int x = 8;
+
+       int y = 6;
+
+       int result = x * y;
+
+       System.out.println(result);
+      }
+    }
+    ```
+    > Output: **48**
+
+### Division
+  ```java
+  int a = 29 / 6;
+  ```
+
+  - example
+
+    ```java
+    public class Main {
+     public static void main(String[] args) {
+    
+       int x = 100;
+
+       int y = 10;
+
+       int result = x / y;
+
+       System.out.println(result);
+      }
+    }
+
+    ```
+    > Output: **10**
+
+### Modulus
+returns the division remainder 
+
+  ```java
+  int b = 9 % 2;
+  ```
+
+  - example
+
+    ```java
+    public class Main {
+     public static void main(String[] args) {
+    
+       int x = 7;
+
+       int y = 2;
+
+       int result = x % y;
+
+       System.out.println(result);
+      }
+    }
+    ```
+    > Output: 1  
+
+### Increment
++1 the value of variable
+  ```java
+  int num1 = 7;
+  num1++;
+  ```
+
+  - example
+
+    ```java
+    public class Main {
+     public static void main(String[] args) {
+    
+       int x = 6;
+
+       x++;
+
+       System.out.println(x);
+      }
+    }
+
+    ```
+    > Output: **7**
+
+### Decrement
+-1 the value of variable 
+  ```java
+  int num2 = 12;
+  num2--;
+  ```
+
+  - example
+
+    ```java
+    public class Main {
+     public static void main(String[] args) {
+    
+       int x = 6;
+
+       x--;
+
+       System.out.println(x);
+      }
+    }
+
+    ```
+    > Output: **5**
+
+
+
+> [!NOTE]
+> there are two ways of doing increment and decrement, and both act in a diffrent way while fetching and assigning
+> 1. Post Increment/Decrement <br>
+>   `variable++;`
+> 
+> while assigning a post increment variable the value get fetched by variable first and then it will get increment by 1 
+> - Post Increment example
+>   ```java
+>   public class Main {
+>     public static void main(String[] args) {
+>    
+>      int x = 9;
+>
+>      int y = x++;
+>
+>      System.out.println(y);
+>     }
+>   }
+>   ```
+>   > Output: **9**
+> 
+> - Post Decrement example>
+>   ```java
+>   public class Main {
+>     public static void main(String[] args) {
+>    
+>      int x = 9;
+>
+>      int y = x++;
+>
+>      System.out.println(y);
+>     }
+>   }
+>   ```
+>   > Output: **9**
+> 
+> in both examples the value didn't changed as the value of x fetched by y before increment, so pre increment/decrement is a better way when assigned to a new variable
+>   
+> 
+> 2. Pre Increment/Decrement <br>
+>   `++variable;`
+> while assigning a pre increment variable the value first will get increment by 1 and then it get fetched by variable and same for pre decrement with decrement by 1
+>
+> - Pre Increment example
+>   ```java
+>   public class Main {
+>     public static void main(String[] args) {
+>    
+>      int x = 9;
+>
+>      int y = ++x;
+>
+>      System.out.println(y);
+>     }
+>   }
+>   ```
+>   > Output: **10**
+>
+> - Pre Decrement example
+>   ```java
+>   public class Main {
+>     public static void main(String[] args) {
+>    
+>      int x = 9;
+>
+>      int y = --x;
+>
+>      System.out.println(y);
+>     }
+>   }
+>   ```
+>   > Output: **8**
+---
+
+## Relational Operators
+used to compare the values or variable and will return [boolean](003%20-%20DataTypes.mdx#8-boolean) values, either true of false.
+
+### equal 
+denoted with `==`
+
+- example
+  ```java
+    public class Main {
+     public static void main(String[] args) {
+     
+       int a = 5;
+       
+       int b = 4;
+       System.out.println(a == b);
+      }
+    }
+  ```
+> Output: **false**
+
+
+### not equal 
+denoted with `!=`
+
+- example
+  ```java
+     public class Main {
+      public static void main(String[] args) {
+     
+       int a = 7;
+   
+       int b = 8;
+  
+       System.out.println(a != b);
+      }
+  }
+  ```
+  > Output: **true**
+
+### greater than
+denoted with `>`
+
+- example
+  ```java
+    public class Main {
+     public static void main(String[] args) {
+     
+       int a = 7;
+
+       int b = 8;
+
+       System.out.println(a > b);
+      }
+    }
+  ```
+  > output: **false**
+
+### less than 
+denoted with `<`
+
+- example
+  ```java
+    public class Main {
+     public static void main(String[] args) {
+     
+       int a = 7;
+
+       int b = 8;
+
+       System.out.println(a < b);
+      }
+    }
+  ```
+  > output: **true**
+
+### greater than or equal to 
+denoted with `>=` and checks for both equals to and greater than in same operation
+
+```java
+int x = 5;
+int y = 5;
+int z = 4;
+System.out.println(x >= y); //return true
+System.out.println(y >= z); //return true
+System.out.println(z >= x); // return false
+```
+
+### less than or equal to
+denoted with `<=` and checks for both equals to and less than in same operation
+
+```java
+int x = 5;
+int y = 5;
+int z = 4;
+System.out.println(x <= y); //return true
+System.out.println(y <= z); //return false
+System.out.println(z <= x); // return true
+```
+

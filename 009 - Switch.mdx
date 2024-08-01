@@ -1,0 +1,63 @@
+# Switch
+
+in some case, instead of writing too many [if else](), using switch is better option <br>switch select one of multiple code block to be executed
+
+- example 
+```java
+public class Main {
+  public static void main(String[] args) {
+
+    int rollNo = 21;
+
+    switch (rollNo) {
+      case 45:
+        System.out.println("Rohit");
+        break;
+
+      case 18:
+        System.out.println("Virat");
+        break;
+
+      case 21:
+        System.out.println("Krish");
+        break;
+    }
+  }
+}
+```
+> Output: **Krish**
+
+
+## `default`
+
+`default` keyword is used to specify the code block to run if none of the case is matched. 
+
+```java
+public class Main {
+  public static void main(String[] args) {
+
+    int rollNo = 54;
+
+    switch (rollNo) {
+      case 45:
+        System.out.println("Rohit");
+        break;
+
+      case 18:
+        System.out.println("Virat");
+        break;
+
+      case 21:
+        System.out.println("Krish");
+        break;
+
+      default:
+        System.out.println("John Cena");
+        break;
+    }
+  }
+}
+```
+> Output: **John Cena**
+
+bcoz none case matched with 54 so the default case will be executed 

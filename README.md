@@ -8,6 +8,10 @@
 - [Data Types in Java](003%20-%20DataTypes.mdx).
 - [Java Literals](004%20-%20Literals.mdx).
 - [Data Type Casting](005%20-%20Casting.mdx).
+- [Java Operators](006%20-%20Operators.mdx)
+- [if else in Java](007%20-%20ifelse.mdx)
+- [Loops in Java](008%20-%20Loops.mdx)
+- [Switch Statement](009%20-%20Switch.mdx)
 
 ---
 

@@ -1,0 +1,62 @@
+# Loops
+
+repeats the execution of a code block till the specified condition is reached
+
+## While Loop
+
+`while` loop repeats the code blocks as long the specified condition is true
+
+```java
+while (condition) {
+  // code to be execute
+}
+```
+
+- example
+```java
+public class Main {
+  public static void main(String[] args) {
+    int i = 1;
+    while (i <= 7) {
+      System.out.println(i);
+      i++;
+    }  
+  }
+}
+```
+> Output : <br>
+> 1 <br>
+> 2 <br>
+> 3 <br>
+> 4 <br>
+> 5 <br> 
+> 6 <br>
+> 7
+>
+
+after 7 executions the value of i becomes 8 so i <= 7 will become false so the loop will end
+
+## Do While Loop
+
+this will execute the code once before checking the condition, and then continue the loop as long as the condition is true
+
+```java
+do {
+  // code block to be executed
+} while (condition)
+```
+
+- example
+```java
+int i = 1;
+do {
+  System.out.println("Hello");
+  i++;
+} while (i <= 5);
+```
+> Output: <br>
+> Hello <br>
+> Hello <br>
+> Hello <br>
+> Hello <br>
+> Hello <br>

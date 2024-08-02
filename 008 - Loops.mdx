@@ -60,3 +60,67 @@ do {
 > Hello <br>
 > Hello <br>
 > Hello <br>
+
+
+# For Loop
+
+in `for` loop all three statements initializing, condition and incrementing can be stated in one line
+
+```java
+for (initialization; condition, increment) {
+  // code 
+}
+```
+
+- example
+```java
+public class Main {
+  public static void main(String[] args) {
+    
+    for (int i = 1; i <= 7; i++) {
+      System.out.println(i);
+    }
+  }
+}
+```
+> Output: <br>
+> 1 <br>
+> 2 <br>
+> 3 <br>
+> 4 <br> 
+> 5 <br>
+> 6 <br>
+> 7 <br>
+
+
+# Nested Loops
+
+it is possible to run loop inside a loop 
+
+the inside loop limit is x time and outer loop limit is 2 times then in total the inner loop will be run 2x times
+
+like :
+
+```java
+public class Main {
+  public static void main(String[] args) {
+    
+    for (int i = 1; i <= 2; i++) {
+      System.out.println("Hello " + i);
+
+      for (int j = 1; j <= 3; j++) {
+        System.out.println("Hi " + j);
+      }
+    }
+  }
+}
+```
+> Output: <br>
+> Hello 1 <br>
+> Hi 1 <br>
+> Hi 2 <br>
+> Hi 3 <br>
+> Hello 2 <br>
+> Hi 1 <br>
+> Hi 2 <br>
+> Hi 3 <br>
